@@ -9,17 +9,17 @@ import net.minecraft.block.Block;
 public class TheopBlocks
 {
 
-	public static Block oreKryptonite = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 7, 0F, null).setRegistryName("oreKryptonite");
-	public static Block kryptoniteBlock = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 7, 0F, null).setRegistryName("kryptoniteBlock");
+	public static Block oreKryptonite = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 7, 0F).setRegistryName("oreKryptonite");
+	public static Block kryptoniteBlock = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 7, 0F).setRegistryName("kryptoniteBlock");
 	public static Block block_of_gunpowder = new BlockTheop(2.0F, 3.0F, "pickaxe", 0, 0F).setRegistryName("block_of_gunpowder");
 	public static Block block_of_sugar = new BlockTheop(2.0F, 3.0F, "pickaxe", 0, 0F).setRegistryName("block_of_sugar");
-	public static Block withermoriumOre = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 8, 0F, null).setRegistryName("withermoriumOre");
-	public static Block withermoriumBlock = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 8, 0F, null).setRegistryName("withermoriumBlock");
-	public static Block pureWitherBlock = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 9, 0F, null).setRegistryName("pureWitherBlock");
-	public static Block metalGemBlock = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 3, 0F, null).setRegistryName("metalGemBlock");
-	public static Block faerumBlock = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 4, 0F, null).setRegistryName("faerumBlock");
-	public static Block ceruliumBlock = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 5, 0F, null).setRegistryName("ceruliumBlock");
-	public static Block superMetalGemBlock = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 6, 0F, null).setRegistryName("superMetalGemBlock");
+	public static Block withermoriumOre = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 8, 0F).setRegistryName("withermoriumOre");
+	public static Block withermoriumBlock = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 8, 0F).setRegistryName("withermoriumBlock");
+	public static Block pureWitherBlock = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 9, 0F).setRegistryName("pureWitherBlock");
+	public static Block metalGemBlock = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 3, 0F).setRegistryName("metalGemBlock");
+	public static Block faerumBlock = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 4, 0F).setRegistryName("faerumBlock");
+	public static Block ceruliumBlock = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 5, 0F).setRegistryName("ceruliumBlock");
+	public static Block superMetalGemBlock = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 6, 0F).setRegistryName("superMetalGemBlock");
 	public static Block magmaCreamBlock = new BlockTheop(2.0F, 3.0F, "pickaxe", 0, 0F).setRegistryName("magmaCreamBlock");
 	public static Block packedCobble = new BlockTheop(5.0F, 6.0F, "pickaxe", 0, 0F).setRegistryName("packedCobble");
 	public static Block superPackedCobble = new BlockTheop(8.0F, 10.0F, "pickaxe", 0, 0F).setRegistryName("superPackedCobble");
@@ -27,7 +27,7 @@ public class TheopBlocks
 	public static Block packedNetherrack = new BlockTheop(2.0F, 3.0F, "pickaxe", 0, 0F).setRegistryName("packedNetherrack");
 	public static Block superPackedNetherrack = new BlockTheop(4.0F, 5.0F, "pickaxe", 0, 0F).setRegistryName("superPackedNetherrack");
 	public static Block ultraPackedNetherrack = new BlockTheop(7.0F, 8.0F, "pickaxe", 0, 0F).setRegistryName("ultraPackedNetherrack");
-	public static Block netherroniumOre = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 8, 0F, null).setRegistryName("netherroniumOre");
+	public static Block netherroniumOre = new BlockTheopOre(2.0F, 3.0F, "pickaxe", 8, 0F).setRegistryName("netherroniumOre");
 	
 	public static void registerBlocks()
     {
