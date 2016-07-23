@@ -1,0 +1,23 @@
+[
+{
+  "modid": "theop",
+  "name": "Theoretical Purposes",
+  "description": "A Simple Mod at Heart. All the OP things you could possibly desire!",
+  "version": "$version",
+  "mcversion": "$mcversion",
+  "url": "",
+  "updateUrl": "",
+  "authors": [
+    "DrDoom_347"
+  ],
+  "credits": "DrDoom_347, TheXFactor117  for Awesome Tutorials",
+  "logoFile": "",
+  "screenshots": [
+    ""
+  ],
+  "parent":"mod_MinecraftForge",
+  "dependencies": [
+	 "mod_MinecraftForge",
+  ]
+}
+]

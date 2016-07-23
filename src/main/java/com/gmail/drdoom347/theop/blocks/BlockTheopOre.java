@@ -1,0 +1,21 @@
+package com.gmail.drdoom347.theop.blocks;
+
+import com.gmail.drdoom347.theop.tabs.ModTabs;
+
+import net.minecraft.block.Block;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.Material;
+
+public class BlockTheopOre extends Block
+{
+	public BlockTheopOre(float hardness, float resistance, String harvestType, int harvestLevel, float lightLevel, SoundType sound)
+	{
+		super(Material.ROCK);
+		this.setCreativeTab(ModTabs.tabTheop);
+		this.setSoundType(sound);
+        this.setHardness(hardness);
+        this.setResistance(resistance);
+        this.setHarvestLevel(harvestType, harvestLevel);
+        this.setLightLevel(lightLevel);
+	}
+}

@@ -1,0 +1,131 @@
+item.theopElytra.name=Super Elytra
+
+item.theop:kryptoniteIngot.name=Kryptonite Ingot
+item.theop:withermoriumIngot.name=Withermorium Ingot
+item.theop:pureWithermoriumIngot.name=Purified Withermorium Ingot
+item.theop:magmaCreamNugget.name=Magma Cream Nugget
+tile.theop:magmaCreamBlock.name=Magma Cream Block
+item.theop:witherDust.name=Wither Dust
+item.theop:slimeNugget.name=Slime Nugget
+
+item.metalGem.name=Metallic Gem
+tile.metalGemBlock.name=MetalGem Block
+item.metalGemSword.name=MetalGem Sword
+item.metalGemPick.name=MetalGem Pickaxe
+item.metalGemShovel.name=MetalGem Shovel
+item.metalGemAxe.name=MetalGem Axe
+item.metalGemHelm.name=MetalGem Helmet
+item.metalGemPlate.name=MetalGem Chestplate
+item.metalGemPants.name=MetalGem Leggings
+item.metalGemBoots.name=MetalGem Boots
+
+item.faerumIngot.name=Faerum Ingot
+tile.faerumBlock.name=Faerum Block
+item.faerumSword.name=Faerum Sword
+item.faerumPick.name=Faerum Pickaxe
+item.faerumShovel.name=Faerum Shovel
+item.faerumAxe.name=Faerum Axe
+item.faerumHelm.name=Faerum Helmet
+item.faerumPlate.name=Faerum Chestplate
+item.faerumPants.name=Faerum Leggings
+item.faerumBoots.name=Faerum Boots
+
+item.ceruliumGem.name=Cerulium Gem
+tile.ceruliumBlock.name=Cerulium Block
+item.ceruliumSword.name=Cerulium Sword
+item.ceruliumPick.name=Cerulium Pickaxe
+item.ceruliumShovel.name=Cerulium Shovel
+item.ceruliumAxe.name=Cerulium Axe
+item.ceruliumHelm.name=Cerulium Helmet
+item.ceruliumPlate.name=Cerulium Chestplate
+item.ceruliumPants.name=Cerulium Leggings
+item.ceruliumBoots.name=Cerulium Boots
+
+item.superMetalGem.name=Super Metallic Gem
+tile.superMetalGemBlock.name=Super MetalGem Block
+item.superMetalGemSword.name=Super MetalGem Sword
+item.superMetalGemPick.name=Super MetalGem Pickaxe
+item.superMetalGemShovel.name=Super MetalGem Shovel
+item.superMetalGemAxe.name=Super MetalGem Axe
+item.superMetalGemHelm.name=Super MetalGem Helmet
+item.superMetalGemPlate.name=Super MetalGem Chestplate
+item.superMetalGemPants.name=Super MetalGem Leggings
+item.superMetalGemBoots.name=Super MetalGem Boots
+
+item.kryptoniteSword.name=Kryptonite Sword
+item.kryptonitePick.name=Kryptonite Pickaxe
+item.kryptoniteShovel.name=Kryptonite Shovel
+item.kryptoniteAxe.name=Kryptonite Axe
+item.kryptoniteHelm.name=Kryptonite Helmet
+item.kryptonitePlate.name=Kryptonite Chestplate
+item.kryptonitePants.name=Kryptonite Leggings
+item.kryptoniteBoots.name=Kryptonite Boots
+
+item.witherSword.name=Withermorium Sword
+item.witherPick.name=Withermorium Pickaxe
+item.witherShovel.name=Withermorium Shovel
+item.witherAxe.name=Withermorium Axe
+item.witherHelm.name=Withermorium Helmet
+item.witherPlate.name=Withermorium Chestplate
+item.witherPants.name=Withermorium Leggings
+item.witherBoots.name=Withermorium Boots
+
+item.pureWitherSword.name=Purified Withermorium Sword
+item.pureWitherPick.name=Purified Withermorium Pickaxe
+item.pureWitherShovel.name=Purified Withermorium Shovel
+item.pureWitherAxe.name=Purified Withermorium Axe
+item.pureWitherHelm.name=Purified Withermorium Helmet
+item.pureWitherPlate.name=Purified Withermorium Chestplate
+item.pureWitherPants.name=Purified Withermorium Leggings
+item.pureWitherBoots.name=Purified Withermorium Boots
+tile.pureWitherBlock.name=Purified Withermorium Block
+
+item.netherroniumIngot.name=Netherronium Ingot
+
+item.superMetalGem.name=Super Metallic Gem
+item.rawLightning.name=Raw Lightning
+item.refinedLightning.name=Refined Lightning
+item.purifiedLightning.name=Purified Lightning
+item.chargedNetherStar.name=Charged Nether Star
+item.studdedNetherStar.name=Studded Nether Star
+item.studCharNetherStar.name=Studded-Charged Nether Star
+item.cinnamon.name=Cinnamon
+item.holyWater.name=Holy Water
+item.cinnamonRoll.name=Cinnamon Roll
+item.cinnamonSugar.name=Cinnamon Sugar
+item.icingBucket.name=Icing Bucket
+item.topaz.name=Topaz
+item.peridot.name=Peridot
+item.basicMultiGem.name=Basic Multi-Gem
+item.enhancedMultiGem.name=Enhanced Multi-Gem
+item.eliteMultiGem.name=Elite Multi-Gem
+item.redstoneChunk.name=Redstone Chunk
+item.lapisChunk.name=Lapis Lazuli Chunk
+item.witherFragment.name=Wither Fragment
+item.witherShard.name=Wither Shard
+item.witherCrystal.name=Wither Crystal
+
+tile.oreKryptonite.name=Kryptonite Ore
+tile.kryptoniteBlock.name=Kryptonite Block
+tile.block_of_gunpowder.name=Gunpowder Block
+tile.block_of_sugar.name=Sugar Block
+tile.withermoriumOre.name=Withermorium Ore
+tile.withermoriumBlock.name=Withermorium Block
+tile.netherroniumOre.name=Netherronium Ore
+
+tile.packedCobble.name=Packed Cobblestone
+tile.superPackedCobble.name=SuperPacked Cobblestone
+tile.ultraPackedCobble.name=UltraPacked Cobblestone
+tile.packedNetherrack.name=Packed Netherrack
+tile.superPackedNetherrack.name=SuperPacked Netherrack
+tile.ultraPackedNetherrack.name=UltraPacked Netherrack
+
+item.metalGemHoe.name=MetalGem Hoe
+item.faerumHoe.name=Faerum Hoe
+item.ceruliumHoe.name=Cerulium Hoe
+item.superMetalGemHoe.name=Super MetalGem Hoe
+item.kryptoniteHoe.name=Kryptonite Hoe
+item.witherHoe.name=Withermorium Hoe
+item.pureWitherHoe.name=Purified Withermorium Hoe
+
+itemGroup.tabTheop=Theoretical Purposes
