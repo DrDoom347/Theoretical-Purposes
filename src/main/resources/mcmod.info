@@ -5,19 +5,13 @@
   "description": "A Simple Mod at Heart. All the OP things you could possibly desire!",
   "version": "$version",
   "mcversion": "$mcversion",
-  "url": "",
+  "url": "https://github.com/DrDoom347/Theoretical-Purposes-1.10.2/",
   "updateUrl": "",
-  "authors": [
-    "DrDoom_347"
-  ],
-  "credits": "DrDoom_347, TheXFactor117  for Awesome Tutorials",
+  "authors": ["DrDoom_347"],
+  "credits": "TheXFactor117  for Awesome Tutorials",
   "logoFile": "",
-  "screenshots": [
-    ""
-  ],
+  "screenshots": [],
   "parent":"mod_MinecraftForge",
-  "dependencies": [
-	 "mod_MinecraftForge",
-  ]
+  "dependencies": ["mod_MinecraftForge"]
 }
 ]

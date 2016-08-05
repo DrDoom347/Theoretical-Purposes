@@ -43,7 +43,6 @@ public class ItemAxeCustom extends ItemTool {
 	* @return Set<Block>
 	*/
 	private static Set<Block> getEffectedBlocks() {
-		// TODO Auto-generated method stub
 		
 		if(blocks == null) {
 			blocks = new HashSet<Block>();
@@ -136,7 +135,6 @@ public class ItemAxeCustom extends ItemTool {
 	
 	@Override
 	public float getStrVsBlock(ItemStack stack, IBlockState state) {
-		// TODO Auto-generated method stub
 		return (!checkStrVsBlock(stack, state))? super.getStrVsBlock(stack, state) : this.material.getEfficiencyOnProperMaterial();
 	}
 }

@@ -7,6 +7,7 @@ import com.gmail.drdoom347.theop.items.ItemTheopHoe;
 import com.gmail.drdoom347.theop.items.ItemTheopPickaxe;
 import com.gmail.drdoom347.theop.items.ItemTheopShovel;
 import com.gmail.drdoom347.theop.items.ItemTheopSword;
+import com.gmail.drdoom347.theop.items.ItemTheopUniversium;
 
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.Item;
@@ -15,6 +16,7 @@ import net.minecraftforge.common.util.EnumHelper;
 
 public class TheopArmory
 {
+	//** Adding Tool Materials **//
 	static Item.ToolMaterial METALGEM = EnumHelper.addToolMaterial("METALGEM", 4, 2048, 9.0F, 5.0F, 14);
 	static Item.ToolMaterial FAERUM = EnumHelper.addToolMaterial("FAERUM", 5, 3072, 10.0F, 6.0F, 16);
 	static Item.ToolMaterial CERULIUM = EnumHelper.addToolMaterial("CERULIUM", 6, 4096, 11.0F, 8.0F, 18);
@@ -24,9 +26,11 @@ public class TheopArmory
 	static Item.ToolMaterial PUREWITHERMORIUM = EnumHelper.addToolMaterial("PUREWITHERMORIUM", 10, 65536, 15.0F, 26.0F, 0);
 	static Item.ToolMaterial NETHERRONIUM = EnumHelper.addToolMaterial("NETHERRONIUM", 11, 131072, 16.0F, 32.0F, 0);
 	static Item.ToolMaterial CHARGEDNETHERRONIUM = EnumHelper.addToolMaterial("CHARGEDNETHERRONIUM", 12, 262144, 17.0F, 35.0F, 0);
-	static Item.ToolMaterial ULTMATIUM = EnumHelper.addToolMaterial("ULTIMATIUM", 13, -1, 18.0F, 37.0F, 0);
-	static Item.ToolMaterial VOIDULTMATIUM = EnumHelper.addToolMaterial("VOIDULTIMATIUM", 14, -1, 20.0F, 42.0F, 50);
-	
+	static Item.ToolMaterial ULTIMATIUM = EnumHelper.addToolMaterial("ULTIMATIUM", 13, -1, 18.0F, 37.0F, 0);
+	static Item.ToolMaterial VOIDULTIMATIUM = EnumHelper.addToolMaterial("VOIDULTIMATIUM", 14, -1, 20.0F, 42.0F, 23);
+	// THE UNIVERSIUM
+	static Item.ToolMaterial UNIVERSIUM = EnumHelper.addToolMaterial("UNIVERSIUM", 15, -1, 42.0F, 50.0F, 23);
+	//** Adding Armor Materials **//
 	static ArmorMaterial AMETALGEM = EnumHelper.addArmorMaterial("AMETALGEM", "theop:metalgem", 200, new int[]{5, 8, 7, 4}, 14, null, 3.0F);
 	static ArmorMaterial AFAERUM = EnumHelper.addArmorMaterial("AFAERUM", "theop:faerum", 225, new int[]{5, 8, 7, 4}, 16, null, 4.0F);
 	static ArmorMaterial ACERULIUM = EnumHelper.addArmorMaterial("ACERULIUM", "theop:cerulium", 250, new int[]{5, 8, 7, 4}, 18, null, 5.0F);
@@ -36,9 +40,10 @@ public class TheopArmory
 	static ArmorMaterial APUREWITHERMORIUM = EnumHelper.addArmorMaterial("APUREWITHERMORIUM", "theop:purifiedwithermorium", 400, new int[]{5, 8, 7, 4}, 0, null, 9.0F);
 	static ArmorMaterial ANETHERRONIUM = EnumHelper.addArmorMaterial("ANETHERRONIUM", "theop:netherronium", 450, new int[]{5, 8, 7, 4}, 0, null, 10.0F);
 	static ArmorMaterial ACHARGEDNETHERRONIUM = EnumHelper.addArmorMaterial("ACHARGEDNETHERRONIUM", "theop:chargednetherronium", 500, new int[]{5, 8, 7, 4}, 0, null, 11.0F);
-	static ArmorMaterial AULTMATIUM = EnumHelper.addArmorMaterial("AULTMATIUM", "theop:ultimatium", -1, new int[]{5, 8, 7, 4}, 0, null, 12.0F);
-	static ArmorMaterial AVOIDULTMATIUM = EnumHelper.addArmorMaterial("AVOIDULTMATIUM", "theop:voidultimatium", -1, new int[]{5, 8, 7, 4}, 50, null, 13.0F);
+	static ArmorMaterial AULTIMATIUM = EnumHelper.addArmorMaterial("AULTMATIUM", "theop:ultimatium", -1, new int[]{5, 8, 7, 4}, 0, null, 12.0F);
+	static ArmorMaterial AVOIDULTIMATIUM = EnumHelper.addArmorMaterial("AVOIDULTMATIUM", "theop:voidultimatium", -1, new int[]{5, 8, 7, 4}, 23, null, 13.0F);
 	
+	//** Adding gear for each material **//
 	public static Item metalGemSword = new ItemTheopSword(METALGEM).setRegistryName("metalGemSword");
     public static Item metalGemPick = new ItemTheopPickaxe(METALGEM).setRegistryName("metalGemPick");
     public static Item metalGemShovel = new ItemTheopShovel(METALGEM).setRegistryName("metalGemShovel");
@@ -108,6 +113,48 @@ public class TheopArmory
     public static Item pureWitherPlate = new ItemTheopArmor(APUREWITHERMORIUM, 1, EntityEquipmentSlot.CHEST, "pureWitherPlate");
     public static Item pureWitherPants = new ItemTheopArmor(APUREWITHERMORIUM, 2, EntityEquipmentSlot.LEGS, "pureWitherPants");
     public static Item pureWitherBoots = new ItemTheopArmor(APUREWITHERMORIUM, 1, EntityEquipmentSlot.FEET, "pureWitherBoots");
+    
+    public static Item netherSword = new ItemTheopSword(NETHERRONIUM).setRegistryName("netherSword");
+    public static Item netherPick = new ItemTheopPickaxe(NETHERRONIUM).setRegistryName("netherPick");
+    public static Item netherShovel = new ItemTheopShovel(NETHERRONIUM).setRegistryName("netherShovel");
+    public static Item netherAxe = new ItemAxeCustom(NETHERRONIUM).setRegistryName("netherAxe");
+    public static Item netherHoe = new ItemTheopHoe(NETHERRONIUM).setRegistryName("netherHoe");
+    public static Item netherHelm = new ItemTheopArmor(ANETHERRONIUM, 1, EntityEquipmentSlot.HEAD, "netherHelm");
+    public static Item netherPlate = new ItemTheopArmor(ANETHERRONIUM, 1, EntityEquipmentSlot.CHEST, "netherPlate");
+    public static Item netherPants = new ItemTheopArmor(ANETHERRONIUM, 2, EntityEquipmentSlot.LEGS, "netherPants");
+    public static Item netherBoots = new ItemTheopArmor(ANETHERRONIUM, 1, EntityEquipmentSlot.FEET, "netherBoots");
+    
+    public static Item chargedNetherSword = new ItemTheopSword(CHARGEDNETHERRONIUM).setRegistryName("chargedNetherSword");
+    public static Item chargedNetherPick = new ItemTheopPickaxe(CHARGEDNETHERRONIUM).setRegistryName("chargedNetherPick");
+    public static Item chargedNetherShovel = new ItemTheopShovel(CHARGEDNETHERRONIUM).setRegistryName("chargedNetherShovel");
+    public static Item chargedNetherAxe = new ItemAxeCustom(CHARGEDNETHERRONIUM).setRegistryName("chargedNetherAxe");
+    public static Item chargedNetherHoe = new ItemTheopHoe(CHARGEDNETHERRONIUM).setRegistryName("chargedNetherHoe");
+    public static Item chargedNetherHelm = new ItemTheopArmor(ACHARGEDNETHERRONIUM, 1, EntityEquipmentSlot.HEAD, "chargedNetherHelm");
+    public static Item chargedNetherPlate = new ItemTheopArmor(ACHARGEDNETHERRONIUM, 1, EntityEquipmentSlot.CHEST, "chargedNetherPlate");
+    public static Item chargedNetherPants = new ItemTheopArmor(ACHARGEDNETHERRONIUM, 2, EntityEquipmentSlot.LEGS, "chargedNetherPants");
+    public static Item chargedNetherBoots = new ItemTheopArmor(ACHARGEDNETHERRONIUM, 1, EntityEquipmentSlot.FEET, "chargedNetherBoots");
+    
+    public static Item ultimatiumSword = new ItemTheopSword(ULTIMATIUM).setRegistryName("ultimatiumSword");
+    public static Item ultimatiumPick = new ItemTheopPickaxe(ULTIMATIUM).setRegistryName("ultimatiumPick");
+    public static Item ultimatiumShovel = new ItemTheopShovel(ULTIMATIUM).setRegistryName("ultimatiumShovel");
+    public static Item ultimatiumAxe = new ItemAxeCustom(ULTIMATIUM).setRegistryName("ultimatiumAxe");
+    public static Item ultimatiumHoe = new ItemTheopHoe(ULTIMATIUM).setRegistryName("ultimatiumHoe");
+    public static Item ultimatiumHelm = new ItemTheopArmor(AULTIMATIUM, 1, EntityEquipmentSlot.HEAD, "ultimatiumHelm");
+    public static Item ultimatiumPlate = new ItemTheopArmor(AULTIMATIUM, 1, EntityEquipmentSlot.CHEST, "ultimatiumPlate");
+    public static Item ultimatiumPants = new ItemTheopArmor(AULTIMATIUM, 2, EntityEquipmentSlot.LEGS, "ultimatiumPants");
+    public static Item ultimatiumBoots = new ItemTheopArmor(AULTIMATIUM, 1, EntityEquipmentSlot.FEET, "ultimatiumBoots");
+    
+    public static Item voidUltimatiumSword = new ItemTheopSword(VOIDULTIMATIUM).setRegistryName("voidUltimatiumSword");
+    public static Item voidUltimatiumPick = new ItemTheopPickaxe(VOIDULTIMATIUM).setRegistryName("voidUltimatiumPick");
+    public static Item voidUltimatiumShovel = new ItemTheopShovel(VOIDULTIMATIUM).setRegistryName("voidUltimatiumShovel");
+    public static Item voidUltimatiumAxe = new ItemAxeCustom(VOIDULTIMATIUM).setRegistryName("voidUltimatiumAxe");
+    public static Item voidUltimatiumHoe = new ItemTheopHoe(VOIDULTIMATIUM).setRegistryName("voidUltimatiumHoe");
+    public static Item voidUltimatiumHelm = new ItemTheopArmor(AVOIDULTIMATIUM, 1, EntityEquipmentSlot.HEAD, "voidUltimatiumHelm");
+    public static Item voidUltimatiumPlate = new ItemTheopArmor(AVOIDULTIMATIUM, 1, EntityEquipmentSlot.CHEST, "voidUltimatiumPlate");
+    public static Item voidUltimatiumPants = new ItemTheopArmor(AVOIDULTIMATIUM, 2, EntityEquipmentSlot.LEGS, "voidUltimatiumPants");
+    public static Item voidUltimatiumBoots = new ItemTheopArmor(AVOIDULTIMATIUM, 1, EntityEquipmentSlot.FEET, "voidUltimatiumBoots");
+    
+    public static Item Universium = new ItemTheopUniversium(UNIVERSIUM).setRegistryName("Universium");
     
     public static void registerItems()
     {
@@ -180,6 +227,48 @@ public class TheopArmory
         RegisterHelper.registerItem(pureWitherPlate);
         RegisterHelper.registerItem(pureWitherPants);
         RegisterHelper.registerItem(pureWitherBoots);
+        
+        RegisterHelper.registerItem(netherSword);
+        RegisterHelper.registerItem(netherPick);
+        RegisterHelper.registerItem(netherShovel);
+        RegisterHelper.registerItem(netherAxe);
+        RegisterHelper.registerItem(netherHoe);
+        RegisterHelper.registerItem(netherHelm);
+        RegisterHelper.registerItem(netherPlate);
+        RegisterHelper.registerItem(netherPants);
+        RegisterHelper.registerItem(netherBoots);
+        
+        RegisterHelper.registerItem(chargedNetherSword);
+        RegisterHelper.registerItem(chargedNetherPick);
+        RegisterHelper.registerItem(chargedNetherShovel);
+        RegisterHelper.registerItem(chargedNetherAxe);
+        RegisterHelper.registerItem(chargedNetherHoe);
+        RegisterHelper.registerItem(chargedNetherHelm);
+        RegisterHelper.registerItem(chargedNetherPlate);
+        RegisterHelper.registerItem(chargedNetherPants);
+        RegisterHelper.registerItem(chargedNetherBoots);
+        
+        RegisterHelper.registerItem(ultimatiumSword);
+        RegisterHelper.registerItem(ultimatiumPick);
+        RegisterHelper.registerItem(ultimatiumShovel);
+        RegisterHelper.registerItem(ultimatiumAxe);
+        RegisterHelper.registerItem(ultimatiumHoe);
+        RegisterHelper.registerItem(ultimatiumHelm);
+        RegisterHelper.registerItem(ultimatiumPlate);
+        RegisterHelper.registerItem(ultimatiumPants);
+        RegisterHelper.registerItem(ultimatiumBoots);
+        
+        RegisterHelper.registerItem(voidUltimatiumSword);
+        RegisterHelper.registerItem(voidUltimatiumPick);
+        RegisterHelper.registerItem(voidUltimatiumShovel);
+        RegisterHelper.registerItem(voidUltimatiumAxe);
+        RegisterHelper.registerItem(voidUltimatiumHoe);
+        RegisterHelper.registerItem(voidUltimatiumHelm);
+        RegisterHelper.registerItem(voidUltimatiumPlate);
+        RegisterHelper.registerItem(voidUltimatiumPants);
+        RegisterHelper.registerItem(voidUltimatiumBoots);
+        
+        RegisterHelper.registerItem(Universium);
     }
     
     public static void registerItemRenderer()
@@ -253,5 +342,47 @@ public class TheopArmory
 		RegisterHelper.registerItemRenderer(pureWitherPlate);
 		RegisterHelper.registerItemRenderer(pureWitherPants);
 		RegisterHelper.registerItemRenderer(pureWitherBoots);
+		
+		RegisterHelper.registerItemRenderer(netherSword);
+        RegisterHelper.registerItemRenderer(netherPick);
+        RegisterHelper.registerItemRenderer(netherShovel);
+        RegisterHelper.registerItemRenderer(netherAxe);
+        RegisterHelper.registerItemRenderer(netherHoe);
+        RegisterHelper.registerItemRenderer(netherHelm);
+        RegisterHelper.registerItemRenderer(netherPlate);
+        RegisterHelper.registerItemRenderer(netherPants);
+        RegisterHelper.registerItemRenderer(netherBoots);
+        
+        RegisterHelper.registerItemRenderer(chargedNetherSword);
+        RegisterHelper.registerItemRenderer(chargedNetherPick);
+        RegisterHelper.registerItemRenderer(chargedNetherShovel);
+        RegisterHelper.registerItemRenderer(chargedNetherAxe);
+        RegisterHelper.registerItemRenderer(chargedNetherHoe);
+        RegisterHelper.registerItemRenderer(chargedNetherHelm);
+        RegisterHelper.registerItemRenderer(chargedNetherPlate);
+        RegisterHelper.registerItemRenderer(chargedNetherPants);
+        RegisterHelper.registerItemRenderer(chargedNetherBoots);
+        
+        RegisterHelper.registerItemRenderer(ultimatiumSword);
+        RegisterHelper.registerItemRenderer(ultimatiumPick);
+        RegisterHelper.registerItemRenderer(ultimatiumShovel);
+        RegisterHelper.registerItemRenderer(ultimatiumAxe);
+        RegisterHelper.registerItemRenderer(ultimatiumHoe);
+        RegisterHelper.registerItemRenderer(ultimatiumHelm);
+        RegisterHelper.registerItemRenderer(ultimatiumPlate);
+        RegisterHelper.registerItemRenderer(ultimatiumPants);
+        RegisterHelper.registerItemRenderer(ultimatiumBoots);
+        
+        RegisterHelper.registerItemRenderer(voidUltimatiumSword);
+        RegisterHelper.registerItemRenderer(voidUltimatiumPick);
+        RegisterHelper.registerItemRenderer(voidUltimatiumShovel);
+        RegisterHelper.registerItemRenderer(voidUltimatiumAxe);
+        RegisterHelper.registerItemRenderer(voidUltimatiumHoe);
+        RegisterHelper.registerItemRenderer(voidUltimatiumHelm);
+        RegisterHelper.registerItemRenderer(voidUltimatiumPlate);
+        RegisterHelper.registerItemRenderer(voidUltimatiumPants);
+        RegisterHelper.registerItemRenderer(voidUltimatiumBoots);
+        
+        RegisterHelper.registerItemRenderer(Universium);
 	}
 }

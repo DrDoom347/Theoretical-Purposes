@@ -1,3 +1,5 @@
+item.theop:Universium.name=The Universium
+
 item.theop:kryptoniteIngot.name=Kryptonite Ingot
 item.theop:withermoriumIngot.name=Withermorium Ingot
 item.theop:pureWithermoriumIngot.name=Purified Withermorium Ingot
@@ -79,6 +81,42 @@ item.theop:pureWitherBoots.name=Purified Withermorium Boots
 tile.theop:pureWitherBlock.name=Purified Withermorium Block
 
 item.theop:netherroniumIngot.name=Netherronium Ingot
+item.theop:netherSword.name=Netherronium Sword
+item.theop:netherPick.name=Netherronium Pickaxe
+item.theop:netherShovel.name=Netherronium Shovel
+item.theop:netherAxe.name=Netherronium Axe
+item.theop:netherHelm.name=Netherronium Helmet
+item.theop:netherPlate.name=Netherronium Chestplate
+item.theop:netherPants.name=Netherronium Leggings
+item.theop:netherBoots.name=Netherronium Boots
+
+item.theop:chargedNetherroniumIngot.name=Charged Netherronium Ingot
+item.theop:chargedNetherSword.name=Charged Netherronium Sword
+item.theop:chargedNetherPick.name=Charged Netherronium Pickaxe
+item.theop:chargedNetherShovel.name=Charged Netherronium Shovel
+item.theop:chargedNetherAxe.name=Charged Netherronium Axe
+item.theop:chargedNetherHelm.name=Charged Netherronium Helmet
+item.theop:chargedNetherPlate.name=Charged Netherronium Chestplate
+item.theop:chargedNetherPants.name=Charged Netherronium Leggings
+item.theop:chargedNetherBoots.name=Charged Netherronium Boots
+
+item.theop:ultimatiumSword.name=Ultimatium Sword
+item.theop:ultimatiumPick.name=Ultimatium Pickaxe
+item.theop:ultimatiumShovel.name=Ultimatium Shovel
+item.theop:ultimatiumAxe.name=Ultimatium Axe
+item.theop:ultimatiumHelm.name=Ultimatium Helmet
+item.theop:ultimatiumPlate.name=Ultimatium Chestplate
+item.theop:ultimatiumPants.name=Ultimatium Leggings
+item.theop:ultimatiumBoots.name=Ultimatium Boots
+
+item.theop:voidUltimatiumSword.name=Void Ultimatium Sword
+item.theop:voidUltimatiumPick.name=Void Ultimatium Pickaxe
+item.theop:voidUltimatiumShovel.name=Void Ultimatium Shovel
+item.theop:voidUltimatiumAxe.name=Void Ultimatium Axe
+item.theop:voidUltimatiumHelm.name=Void Ultimatium Helmet
+item.theop:voidUltimatiumPlate.name=Void Ultimatium Chestplate
+item.theop:voidUltimatiumPants.name=Void Ultimatium Leggings
+item.theop:voidUltimatiumBoots.name=Void Ultimatium Boots
 
 item.theop:superMetalGem.name=Super Metallic Gem
 item.theop:rawLightning.name=Raw Lightning
@@ -125,5 +163,9 @@ item.theop:superMetalGemHoe.name=Super MetalGem Hoe
 item.theop:kryptoniteHoe.name=Kryptonite Hoe
 item.theop:witherHoe.name=Withermorium Hoe
 item.theop:pureWitherHoe.name=Purified Withermorium Hoe
+item.theop:netherHoe.name=Netherronium Hoe
+item.theop:chargedNetherHoe.name=Charged Netherronium Hoe
+item.theop:ultimatiumHoe.name=Ultmatium Hoe
+item.theop:voidUltimatiumHoe.name=Void Ultimatium Hoe
 
 itemGroup.tabTheop=Theoretical Purposes
