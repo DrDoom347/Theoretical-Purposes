@@ -1,11 +1,13 @@
 package com.gmail.drdoom347.theop;
 
 import com.gmail.drdoom347.theop.crafting.Recipes;
+import com.gmail.drdoom347.theop.handlers.ArmorFlightHandler;
 import com.gmail.drdoom347.theop.init.TheopArmory;
 import com.gmail.drdoom347.theop.init.TheopBlocks;
 import com.gmail.drdoom347.theop.init.TheopItems;
 import com.gmail.drdoom347.theop.proxies.CommonProxy;
 
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.Instance;
 import net.minecraftforge.fml.common.SidedProxy;
@@ -29,9 +31,10 @@ public class TheoreticalPurposes
     	TheopItems.registerItems();
     	TheopArmory.registerItems();
     	proxy.registerRenderers();
+    	MinecraftForge.EVENT_BUS.register(new ArmorFlightHandler());
     }
 
-    @Mod.EventHandler
+	@Mod.EventHandler
     public void init(FMLInitializationEvent event)
     {
     	Recipes.addSmelting();
