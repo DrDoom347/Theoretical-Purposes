@@ -32,20 +32,17 @@ public class ArmorFlightHandler
 		
 		if (event.player instanceof EntityPlayer)
 		{	
-			if (((EntityPlayer) event.player).inventory.armorInventory[2].getItem() != null)
+			if (((EntityPlayer) event.player).inventory.armorInventory[2] != null)
 			{
 				if (((EntityPlayer) event.player).inventory.armorInventory[2].getItem() != TheopArmory.voidUltimatiumPlate)
 				{
-					playersWithFlight.put(event.player, false);
 					event.player.capabilities.allowFlying = false;
 					event.player.capabilities.isFlying = false;
-				} else 
-				{
-					return;
 				}
-			} else 
+			}else
 			{
-				return;
+				event.player.capabilities.allowFlying = false;
+				event.player.capabilities.isFlying = false;
 			}
 		}
 	}
