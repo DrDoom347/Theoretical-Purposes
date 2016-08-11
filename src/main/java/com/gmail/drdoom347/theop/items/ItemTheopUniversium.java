@@ -121,6 +121,7 @@ public class ItemTheopUniversium extends ItemTool
 				blocks.add(Blocks.STONE_SLAB);
 				blocks.add(Blocks.STONE_BUTTON);
 				blocks.add(Blocks.STONE_PRESSURE_PLATE);
+				blocks.add(Blocks.OBSIDIAN);
 				// Web Block
 				blocks.add(Blocks.WEB);
 				// Set for Spade Blocks
@@ -128,7 +129,59 @@ public class ItemTheopUniversium extends ItemTool
 			}
 			return blocks;
 		}
+		public boolean canHarvestBlock(IBlockState blockIn)
+	    {
+	        Block block = blockIn.getBlock();
 
+	        if (block == Blocks.OBSIDIAN)
+	        {
+	            return this.toolMaterial.getHarvestLevel() == 3;
+	        }
+	        else if (block != Blocks.DIAMOND_BLOCK && block != Blocks.DIAMOND_ORE)
+	        {
+	            if (block != Blocks.EMERALD_ORE && block != Blocks.EMERALD_BLOCK)
+	            {
+	                if (block != Blocks.GOLD_BLOCK && block != Blocks.GOLD_ORE)
+	                {
+	                    if (block != Blocks.IRON_BLOCK && block != Blocks.IRON_ORE)
+	                    {
+	                        if (block != Blocks.LAPIS_BLOCK && block != Blocks.LAPIS_ORE)
+	                        {
+	                            if (block != Blocks.REDSTONE_ORE && block != Blocks.LIT_REDSTONE_ORE)
+	                            {
+	                                Material material = blockIn.getMaterial();
+	                                return material == Material.ROCK ? true : (material == Material.IRON ? true : material == Material.ANVIL);
+	                            }
+	                            else
+	                            {
+	                                return this.toolMaterial.getHarvestLevel() >= 2;
+	                            }
+	                        }
+	                        else
+	                        {
+	                            return this.toolMaterial.getHarvestLevel() >= 1;
+	                        }
+	                    }
+	                    else
+	                    {
+	                        return this.toolMaterial.getHarvestLevel() >= 1;
+	                    }
+	                }
+	                else
+	                {
+	                    return this.toolMaterial.getHarvestLevel() >= 2;
+	                }
+	            }
+	            else
+	            {
+	                return this.toolMaterial.getHarvestLevel() >= 2;
+	            }
+	        }
+	        else
+	        {
+	            return this.toolMaterial.getHarvestLevel() >= 2;
+	        }
+	    }
 		/**
 		* This check if the block can be mined by the custom axe
 		* @param ItemStack stack

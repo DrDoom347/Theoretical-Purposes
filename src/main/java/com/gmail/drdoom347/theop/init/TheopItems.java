@@ -43,6 +43,13 @@ public class TheopItems
 	public static Item witherDust = new ItemTheopBasicItem().setRegistryName("witherDust");
 	public static Item slimeNugget = new ItemTheopBasicItem().setRegistryName("slimeNugget");
 	public static Item netherroniumIngot = new ItemTheopIngot().setRegistryName("netherroniumIngot");
+	public static Item chargedNetherIngot = new ItemTheopIngot().setRegistryName("chargedNetherIngot");
+	public static Item ultimatiumIngot = new ItemTheopIngot().setRegistryName("ultimatiumIngot");
+	public static Item voidUltimatiumIngot = new ItemTheopIngot().setRegistryName("voidUltimatiumIngot");
+	public static Item blitzLightning = new ItemTheopLightning().setRegistryName("blitzLightning");
+	public static Item refinedBlitzLightning = new ItemTheopLightning().setRegistryName("refinedBlitzLightning");
+	public static Item pureRefinedBlitzLightning = new ItemTheopLightning().setRegistryName("pureRefinedBlitzLightning");
+	public static Item witherLightning = new ItemTheopLightning().setRegistryName("witherLightning");
 	
 	public static void registerItems()
 	{
@@ -50,6 +57,10 @@ public class TheopItems
 		RegisterHelper.registerItem(rawLightning);
 		RegisterHelper.registerItem(refinedLightning);
 		RegisterHelper.registerItem(purifiedLightning);
+		RegisterHelper.registerItem(blitzLightning);
+		RegisterHelper.registerItem(refinedBlitzLightning);
+		RegisterHelper.registerItem(pureRefinedBlitzLightning);
+		RegisterHelper.registerItem(witherLightning);
 		RegisterHelper.registerItem(chargedNetherStar);
 		RegisterHelper.registerItem(studdedNetherStar);
 		RegisterHelper.registerItem(studCharNetherStar);
@@ -78,6 +89,9 @@ public class TheopItems
 		RegisterHelper.registerItem(witherDust);
 		RegisterHelper.registerItem(slimeNugget);
 		RegisterHelper.registerItem(netherroniumIngot);
+		RegisterHelper.registerItem(chargedNetherIngot);
+		RegisterHelper.registerItem(ultimatiumIngot);
+		RegisterHelper.registerItem(voidUltimatiumIngot);
 	}
 	
 	public static void registerItemRenderer()
@@ -114,5 +128,12 @@ public class TheopItems
 		RegisterHelper.registerItemRenderer(witherDust);
 		RegisterHelper.registerItemRenderer(slimeNugget);
 		RegisterHelper.registerItemRenderer(netherroniumIngot);
+		RegisterHelper.registerItemRenderer(chargedNetherIngot);
+		RegisterHelper.registerItemRenderer(ultimatiumIngot);
+		RegisterHelper.registerItemRenderer(voidUltimatiumIngot);
+		RegisterHelper.registerItemRenderer(blitzLightning);
+		RegisterHelper.registerItemRenderer(refinedBlitzLightning);
+		RegisterHelper.registerItemRenderer(pureRefinedBlitzLightning);
+		RegisterHelper.registerItemRenderer(witherLightning);
 	}
 }

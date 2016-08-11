@@ -48,7 +48,11 @@ public class Recipes
 		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.cinnamonSugar,2), new Object[] {"AB", "BA", 'A', TheopItems.cinnamon, 'B', Items.SUGAR});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.cinnamonSugar,2), new Object[] {"BA", "AB", 'A', TheopItems.cinnamon, 'B', Items.SUGAR});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.cinnamonRoll,3), new Object[] {"AAA", "BBB", "CCC", 'A', TheopItems.icingBucket, 'B', TheopItems.cinnamonSugar, 'C', Items.BREAD});
-		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.purifiedLightning), new Object[] {" A ", "ABA", " A ", 'A', TheopItems.refinedLightning, 'B', TheopItems.holyWater});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.purifiedLightning), new Object[] {"BBB", "BAB", "BBB", 'A', TheopItems.refinedLightning, 'B', TheopItems.holyWater});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.blitzLightning), new Object[] {"AAA", "AAA", "AAA", 'A', TheopItems.purifiedLightning});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.refinedBlitzLightning), new Object[] {" A ", "ABA", " A ", 'A', TheopItems.blitzLightning, 'B', Blocks.QUARTZ_BLOCK});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.pureRefinedBlitzLightning), new Object[] {"AAA", "ABA", "AAA", 'A', TheopItems.holyWater, 'B', TheopItems.refinedBlitzLightning});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.witherLightning), new Object[] {"AAA", "AAA", "AAA", 'A', TheopItems.pureRefinedBlitzLightning});
 		//** Packed Blocks **//
 		GameRegistry.addShapedRecipe(new ItemStack(TheopBlocks.packedCobble), new Object[] {"AAA", "AAA", "AAA", 'A', Blocks.COBBLESTONE});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopBlocks.superPackedCobble), new Object[] {"AAA", "AAA", "AAA", 'A', TheopBlocks.packedCobble});
@@ -71,13 +75,44 @@ public class Recipes
 		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.witherShard), new Object[] {"BAB", "ACA", "BAB", 'A', TheopItems.witherFragment, 'B', new ItemStack(Items.SKULL, 1, 1), 'C', Items.MAGMA_CREAM});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.witherCrystal), new Object[] {"BAB", "ACA", "BAB", 'A', TheopItems.witherShard, 'B', Items.NETHER_STAR, 'C', TheopBlocks.magmaCreamBlock});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopBlocks.netherroniumOre), new Object[] {"ABA", "BAB", "ABA", 'A', TheopItems.witherCrystal, 'B', TheopBlocks.ultraPackedNetherrack});
+		//** Netherronium Stuff **//
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.netherSword), new Object[] {"A", "A", "B", 'A', TheopItems.netherroniumIngot, 'B', Items.STICK});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.netherPick), new Object[] {"AAA", " B ", " B ", 'A', TheopItems.netherroniumIngot, 'B', Items.STICK});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.netherShovel), new Object[] {"A", "B", "B", 'A', TheopItems.netherroniumIngot, 'B', Items.STICK});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.netherAxe), new Object[] {"AA", "BA", "B ", 'A', TheopItems.netherroniumIngot, 'B', Items.STICK});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.netherHoe), new Object[] {"AA", "B ", "B ", 'A', TheopItems.netherroniumIngot, 'B', Items.STICK});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.netherHelm), new Object[] {"AAA", "A A", 'A', TheopItems.netherroniumIngot});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.netherPlate), new Object[] {"A A", "AAA", "AAA", 'A', TheopItems.netherroniumIngot});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.netherPants), new Object[] {"AAA", "A A", "A A", 'A', TheopItems.netherroniumIngot});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.netherBoots), new Object[] {"A A", "A A", 'A', TheopItems.netherroniumIngot});
+		//** Charged Netherronium Stuff **//
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherSword), new Object[] {"A", "A", "B", 'A', TheopItems.chargedNetherIngot, 'B', Items.STICK});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherPick), new Object[] {"AAA", " B ", " B ", 'A', TheopItems.chargedNetherIngot, 'B', Items.STICK});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherShovel), new Object[] {"A", "B", "B", 'A', TheopItems.chargedNetherIngot, 'B', Items.STICK});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherAxe), new Object[] {"AA", "BA", "B ", 'A', TheopItems.chargedNetherIngot, 'B', Items.STICK});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherHoe), new Object[] {"AA", "B ", "B ", 'A', TheopItems.chargedNetherIngot, 'B', Items.STICK});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherHelm), new Object[] {"AAA", "A A", 'A', TheopItems.chargedNetherIngot});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherPlate), new Object[] {"A A", "AAA", "AAA", 'A', TheopItems.chargedNetherIngot});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherPants), new Object[] {"AAA", "A A", "A A", 'A', TheopItems.chargedNetherIngot});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherBoots), new Object[] {"A A", "A A", 'A', TheopItems.chargedNetherIngot});
+		//** Charged out of Regular **//
+		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.chargedNetherIngot), new Object[] {"AAA", "ABA", "AAA", 'A', TheopItems.witherLightning, 'B', TheopItems.netherroniumIngot});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherSword), new Object[] {"AAA", "ABA", "AAA", 'A', TheopItems.witherLightning, 'B', TheopArmory.netherSword});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherPick), new Object[] {"AAA", "ABA", "AAA", 'A', TheopItems.witherLightning, 'B', TheopArmory.netherPick});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherShovel), new Object[] {"AAA", "ABA", "AAA", 'A', TheopItems.witherLightning, 'B', TheopArmory.netherShovel});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherAxe), new Object[] {"AAA", "ABA", "AAA", 'A', TheopItems.witherLightning, 'B', TheopArmory.netherAxe});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherHoe), new Object[] {"AAA", "ABA", "AAA", 'A', TheopItems.witherLightning, 'B', TheopArmory.netherHoe});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherHelm), new Object[] {"AAA", "ABA", "AAA", 'A', TheopItems.witherLightning, 'B', TheopArmory.netherHelm});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherPlate), new Object[] {"AAA", "ABA", "AAA", 'A', TheopItems.witherLightning, 'B', TheopArmory.netherPlate});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherPants), new Object[] {"AAA", "ABA", "AAA", 'A', TheopItems.witherLightning, 'B', TheopArmory.netherPants});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.chargedNetherBoots), new Object[] {"AAA", "ABA", "AAA", 'A', TheopItems.witherLightning, 'B', TheopArmory.netherBoots});	
 		//** Purified Withermorium Stuff **//
 		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.pureWithermoriumIngot), new Object[] {"AAA", "ABA", "AAA", 'A', TheopItems.holyWater, 'B', TheopItems.withermoriumIngot});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.pureWitherSword), new Object[] {"A", "A", "B", 'A', TheopItems.pureWithermoriumIngot, 'B', Items.STICK});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.pureWitherPick), new Object[] {"AAA", " B ", " B ", 'A', TheopItems.pureWithermoriumIngot, 'B', Items.STICK});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.pureWitherShovel), new Object[] {"A", "B", "B", 'A', TheopItems.pureWithermoriumIngot, 'B', Items.STICK});
-		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.pureWitherAxe), new Object[] {" AA", " BA", " B ", 'A', TheopItems.pureWithermoriumIngot, 'B', Items.STICK});
-		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.pureWitherHoe), new Object[] {" AA", " B ", " B ", 'A', TheopItems.pureWithermoriumIngot, 'B', Items.STICK});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.pureWitherAxe), new Object[] {"AA", "BA", "B ", 'A', TheopItems.pureWithermoriumIngot, 'B', Items.STICK});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.pureWitherHoe), new Object[] {"AA", "B ", "B ", 'A', TheopItems.pureWithermoriumIngot, 'B', Items.STICK});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.pureWitherHelm), new Object[] {"AAA", "A A", 'A', TheopItems.pureWithermoriumIngot});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.pureWitherPlate), new Object[] {"A A", "AAA", "AAA", 'A', TheopItems.pureWithermoriumIngot});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.pureWitherPants), new Object[] {"AAA", "A A", "A A", 'A', TheopItems.pureWithermoriumIngot});
@@ -129,13 +164,13 @@ public class Recipes
 		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.faerumBoots), new Object[] {"A A", "A A", 'A', TheopItems.faerumIngot});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopBlocks.faerumBlock), new Object[] {"AAA", "AAA", "AAA", 'A', TheopItems.faerumIngot});
 		//** Cerulium Stuff **//
-		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.ceruliumGem), new Object[] {"BA", "AB", 'A', Items.DIAMOND, 'B', Items.EMERALD});
-		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.ceruliumGem), new Object[] {"AB", "BA", 'A', Items.DIAMOND, 'B', Items.EMERALD});
-		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.ceruliumSword), new Object[] {"A", "A", "B", 'A', TheopItems.ceruliumGem, 'B', Items.STICK});
-		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.ceruliumPick), new Object[] {"AAA", " B ", " B ", 'A', TheopItems.ceruliumGem, 'B', Items.STICK});
-		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.ceruliumShovel), new Object[] {"A", "B", "B", 'A', TheopItems.ceruliumGem, 'B', Items.STICK});
-		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.ceruliumAxe), new Object[] {" AA", " BA", " B ", 'A', TheopItems.ceruliumGem, 'B', Items.STICK});
-		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.ceruliumHoe), new Object[] {" AA", " B ", " B ", 'A', TheopItems.ceruliumGem, 'B', Items.STICK});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.ceruliumGem,2), new Object[] {"BA", "AB", 'A', Items.DIAMOND, 'B', Items.EMERALD});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopItems.ceruliumGem,2), new Object[] {"AB", "BA", 'A', Items.DIAMOND, 'B', Items.EMERALD});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.ceruliumSword), new Object[] {" A ", " A ", "CBC", 'A', TheopItems.ceruliumGem, 'B', Items.STICK, 'C', Items.GOLD_NUGGET});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.ceruliumPick), new Object[] {"AAA", " B ", "CBC", 'A', TheopItems.ceruliumGem, 'B', Items.STICK, 'C', Items.GOLD_NUGGET});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.ceruliumShovel), new Object[] {" A ", " B ", "CBC", 'A', TheopItems.ceruliumGem, 'B', Items.STICK, 'C', Items.GOLD_NUGGET});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.ceruliumAxe), new Object[] {" AA", " BA", "CBC", 'A', TheopItems.ceruliumGem, 'B', Items.STICK, 'C', Items.GOLD_NUGGET});
+		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.ceruliumHoe), new Object[] {" AA", " B ", "CBC", 'A', TheopItems.ceruliumGem, 'B', Items.STICK, 'C', Items.GOLD_NUGGET});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.ceruliumHelm), new Object[] {"AAA", "A A", 'A', TheopItems.ceruliumGem});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.ceruliumPlate), new Object[] {"A A", "AAA", "AAA", 'A', TheopItems.ceruliumGem});
 		GameRegistry.addShapedRecipe(new ItemStack(TheopArmory.ceruliumPants), new Object[] {"AAA", "A A", "A A", 'A', TheopItems.ceruliumGem});
@@ -178,6 +213,8 @@ public class Recipes
 		GameRegistry.addShapelessRecipe(new ItemStack(TheopBlocks.packedNetherrack,9), new ItemStack(TheopBlocks.superPackedNetherrack));
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.NETHERRACK,9), new ItemStack(TheopBlocks.packedNetherrack));
 		GameRegistry.addShapelessRecipe(new ItemStack(Blocks.ICE,6), new ItemStack(Blocks.PACKED_ICE));
+		//** Custom Flint & Steels Shapeless**//
+		GameRegistry.addShapelessRecipe(new ItemStack(TheopArmory.flintAndMetalGem), new ItemStack(Items.FLINT), new ItemStack(TheopItems.metalGem));
 		//** Miscellaneous Shapeless **//
 		GameRegistry.addShapelessRecipe(new ItemStack(TheopItems.basicMultiGem), new ItemStack(TheopItems.peridot), new ItemStack(TheopItems.lapisChunk), new ItemStack(TheopItems.redstoneChunk), new ItemStack(TheopItems.topaz), new ItemStack(TheopItems.slimeNugget));
 		GameRegistry.addShapelessRecipe(new ItemStack(TheopItems.icingBucket), new ItemStack(Items.SUGAR), new ItemStack(Items.MILK_BUCKET));

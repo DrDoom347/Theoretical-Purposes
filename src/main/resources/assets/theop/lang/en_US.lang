@@ -8,6 +8,7 @@ tile.theop:magmaCreamBlock.name=Magma Cream Block
 item.theop:witherDust.name=Wither Dust
 item.theop:slimeNugget.name=Slime Nugget
 
+item.theop:flintAndMetalGem.name=Flint and MetalGem
 item.theop:metalGem.name=Metallic Gem
 tile.theop:metalGemBlock.name=MetalGem Block
 item.theop:metalGemSword.name=MetalGem Sword
@@ -90,7 +91,7 @@ item.theop:netherPlate.name=Netherronium Chestplate
 item.theop:netherPants.name=Netherronium Leggings
 item.theop:netherBoots.name=Netherronium Boots
 
-item.theop:chargedNetherroniumIngot.name=Charged Netherronium Ingot
+item.theop:chargedNetherIngot.name=Charged Netherronium Ingot
 item.theop:chargedNetherSword.name=Charged Netherronium Sword
 item.theop:chargedNetherPick.name=Charged Netherronium Pickaxe
 item.theop:chargedNetherShovel.name=Charged Netherronium Shovel
@@ -100,6 +101,7 @@ item.theop:chargedNetherPlate.name=Charged Netherronium Chestplate
 item.theop:chargedNetherPants.name=Charged Netherronium Leggings
 item.theop:chargedNetherBoots.name=Charged Netherronium Boots
 
+item.theop:ultimatiumIngot.name=Ultimatium Ingot
 item.theop:ultimatiumSword.name=Ultimatium Sword
 item.theop:ultimatiumPick.name=Ultimatium Pickaxe
 item.theop:ultimatiumShovel.name=Ultimatium Shovel
@@ -109,6 +111,7 @@ item.theop:ultimatiumPlate.name=Ultimatium Chestplate
 item.theop:ultimatiumPants.name=Ultimatium Leggings
 item.theop:ultimatiumBoots.name=Ultimatium Boots
 
+item.theop:voidUltimatiumIngot.name=Void Ultimatium Ingot
 item.theop:voidUltimatiumSword.name=Void Ultimatium Sword
 item.theop:voidUltimatiumPick.name=Void Ultimatium Pickaxe
 item.theop:voidUltimatiumShovel.name=Void Ultimatium Shovel
@@ -122,6 +125,10 @@ item.theop:superMetalGem.name=Super Metallic Gem
 item.theop:rawLightning.name=Raw Lightning
 item.theop:refinedLightning.name=Refined Lightning
 item.theop:purifiedLightning.name=Purified Lightning
+item.theop:blitzLightning.name=Blitz Lightning
+item.theop:refinedBlitzLightning.name=Refined Blitz Lightning
+item.theop:pureRefinedBlitzLightning.name=Purified Refined Blitz Lightning
+item.theop:witherLightning.name=Wither Lightning
 item.theop:chargedNetherStar.name=Charged Nether Star
 item.theop:studdedNetherStar.name=Studded Nether Star
 item.theop:studCharNetherStar.name=Studded-Charged Nether Star

@@ -30,7 +30,7 @@ public class ArmorFlightHandler
 	{		
 		if (event.phase != TickEvent.Phase.START || !event.player.worldObj.isRemote) return;
 		
-		if (event.player instanceof EntityPlayer)
+		if (event.player.capabilities.isCreativeMode = false)
 		{	
 			if (((EntityPlayer) event.player).inventory.armorInventory[2] != null)
 			{

@@ -3,6 +3,7 @@ package com.gmail.drdoom347.theop.init;
 import com.gmail.drdoom347.theop.helpers.RegisterHelper;
 import com.gmail.drdoom347.theop.items.ItemAxeCustom;
 import com.gmail.drdoom347.theop.items.ItemTheopArmor;
+import com.gmail.drdoom347.theop.items.ItemTheopFlintAndSteel;
 import com.gmail.drdoom347.theop.items.ItemTheopHoe;
 import com.gmail.drdoom347.theop.items.ItemTheopPickaxe;
 import com.gmail.drdoom347.theop.items.ItemTheopShovel;
@@ -27,9 +28,9 @@ public class TheopArmory
 	static Item.ToolMaterial NETHERRONIUM = EnumHelper.addToolMaterial("NETHERRONIUM", 11, 131072, 16.0F, 32.0F, 0);
 	static Item.ToolMaterial CHARGEDNETHERRONIUM = EnumHelper.addToolMaterial("CHARGEDNETHERRONIUM", 12, 262144, 17.0F, 35.0F, 0);
 	static Item.ToolMaterial ULTIMATIUM = EnumHelper.addToolMaterial("ULTIMATIUM", 13, -1, 18.0F, 37.0F, 0);
-	static Item.ToolMaterial VOIDULTIMATIUM = EnumHelper.addToolMaterial("VOIDULTIMATIUM", 14, -1, 20.0F, 42.0F, 23);
-	// THE UNIVERSIUM
-	static Item.ToolMaterial UNIVERSIUM = EnumHelper.addToolMaterial("UNIVERSIUM", 15, -1, 42.0F, 50.0F, 23);
+	static Item.ToolMaterial VOIDULTIMATIUM = EnumHelper.addToolMaterial("VOIDULTIMATIUM", 14, -1, 20.0F, 42.0F, 22);
+	//** THE UNIVERSIUM **//
+	static Item.ToolMaterial UNIVERSIUM = EnumHelper.addToolMaterial("UNIVERSIUM", 15, -1, 100.0F, 99.0F, 22);
 	//** Adding Armor Materials **//
 	static ArmorMaterial AMETALGEM = EnumHelper.addArmorMaterial("AMETALGEM", "theop:metalgem", 200, new int[]{5, 8, 7, 4}, 14, null, 3.0F);
 	static ArmorMaterial AFAERUM = EnumHelper.addArmorMaterial("AFAERUM", "theop:faerum", 225, new int[]{5, 8, 7, 4}, 16, null, 4.0F);
@@ -42,6 +43,9 @@ public class TheopArmory
 	static ArmorMaterial ACHARGEDNETHERRONIUM = EnumHelper.addArmorMaterial("ACHARGEDNETHERRONIUM", "theop:chargednetherronium", 500, new int[]{5, 8, 7, 4}, 0, null, 11.0F);
 	static ArmorMaterial AULTIMATIUM = EnumHelper.addArmorMaterial("AULTMATIUM", "theop:ultimatium", -1, new int[]{5, 8, 7, 4}, 0, null, 12.0F);
 	static ArmorMaterial AVOIDULTIMATIUM = EnumHelper.addArmorMaterial("AVOIDULTMATIUM", "theop:voidultimatium", -1, new int[]{5, 8, 7, 4}, 23, null, 13.0F);
+	
+	//** For fun, adding custom Flint and Steels **//
+	public static Item flintAndMetalGem = new ItemTheopFlintAndSteel(128).setRegistryName("flintAndMetalGem");
 	
 	//** Adding gear for each material **//
 	public static Item metalGemSword = new ItemTheopSword(METALGEM).setRegistryName("metalGemSword");
@@ -158,6 +162,7 @@ public class TheopArmory
     
     public static void registerItems()
     {
+        RegisterHelper.registerItem(flintAndMetalGem);
         RegisterHelper.registerItem(metalGemSword);
         RegisterHelper.registerItem(metalGemPick);
         RegisterHelper.registerItem(metalGemShovel);
@@ -273,7 +278,8 @@ public class TheopArmory
     
     public static void registerItemRenderer()
 	{		
-		RegisterHelper.registerItemRenderer(metalGemSword);
+        RegisterHelper.registerItemRenderer(flintAndMetalGem);
+        RegisterHelper.registerItemRenderer(metalGemSword);
 		RegisterHelper.registerItemRenderer(metalGemPick);
 		RegisterHelper.registerItemRenderer(metalGemShovel);
 		RegisterHelper.registerItemRenderer(metalGemAxe);
